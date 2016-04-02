@@ -149,6 +149,7 @@ def left90():
 	GPIO.setup(15,GPIO.OUT)
 	pwm=GPIO.PWM(15,100)                        ## PWM Frequency
 	pwm.start(5)
+	
 	angle1=180
 	duty= float(angle1)/10 + 2.5 
 	pwm.ChangeDutyCycle(duty)
@@ -160,10 +161,10 @@ def left90():
 def left45():
 	GPIO.setmode(GPIO.BOARD)
 	GPIO.setup(15,GPIO.OUT)
-	pwm=GPIO.PWM(15,50)                       ## PWM Frequency
+	pwm=GPIO.PWM(15,100)                       ## PWM Frequency
 	pwm.start(5)
  
-	angle1=110
+	angle1=135
 	duty= float(angle1)/10 + 2.5 
 	pwm.ChangeDutyCycle(duty)
 	time.sleep(1)
@@ -175,7 +176,7 @@ def right90():
 	GPIO.setmode(GPIO.BOARD)
 	GPIO.setup(15,GPIO.OUT)
 	pwm=GPIO.PWM(15,100)                        ## PWM Frequency
-	##pwm.start(5)
+	pwm.start(5)
  
 	angle1=5
 	duty= float(angle1)/10 + 2.5 
