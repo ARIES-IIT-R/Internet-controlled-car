@@ -13,7 +13,7 @@ def get_frame():
 
     camera_port=0
 
-    ramp_frames=100
+    ramp_frames=50
 
     camera=cv2.VideoCapture(camera_port) #this makes a web cam object
 
@@ -36,5 +36,5 @@ def calc():
 
 
 if __name__ == '__main__':
-    app.run(host='192.168.0.102',port=5000)
+    app.run(host='192.168.0.103',port=5000)
     #192.168.0.103
